@@ -207,6 +207,7 @@ a {
     left: -155px;
     transition: left .3s;
     top: 0px;
+    z-index: 1;
 }
 
 .left-side-bar > .status {
