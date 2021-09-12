@@ -10,6 +10,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: oldlace;
+    height: 3000px;
 
 }
 
@@ -195,12 +196,6 @@ a {
     left: 100%;
     background-color: #dfdfdf;
 
-}
-
-body {
-
-    height: 3000px;
-    
 }
 
 .left-side-bar {
