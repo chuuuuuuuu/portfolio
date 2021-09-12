@@ -204,9 +204,9 @@ a {
     height: 100%;
     width: 180px;
     position: fixed;
-    left: -140px;
+    left: -155px;
     transition: left .3s;
-
+    top: 0px;
 }
 
 .left-side-bar > .status {
