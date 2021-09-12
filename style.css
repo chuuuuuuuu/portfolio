@@ -207,7 +207,7 @@ body {
 
     background-color: #dfdfdf;
     height: 100%;
-    width: 200px;
+    width: 180px;
     position: fixed;
     left: -100px;
     transition: left .3s;
