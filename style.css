@@ -204,7 +204,7 @@ a {
     height: 100%;
     width: 180px;
     position: fixed;
-    left: -130px;
+    left: -120px;
     transition: left .3s;
     top: 0px;
     z-index: 1;
