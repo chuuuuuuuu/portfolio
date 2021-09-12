@@ -209,7 +209,7 @@ body {
     height: 100%;
     width: 180px;
     position: fixed;
-    left: -120px;
+    left: -100px;
     transition: left .3s;
 
 }
