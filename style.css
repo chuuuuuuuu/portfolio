@@ -209,8 +209,8 @@ body {
     height: 100%;
     width: 180px;
     position: fixed;
-    left: -155px;
-    transition: left .2s;
+    left: -120px;
+    transition: left .3s;
 
 }
 
