@@ -1,3 +1,10 @@
+@FONT-FACE{
+
+    font-family: "jua";
+    src: url("BMJUA_ttf.ttf");
+
+}
+
 body{
 
     padding: 0;
@@ -90,4 +97,64 @@ nav div{
 .dropdown:hover .dropbtn {
     
     background-color: #3e8e41;
+
 }
+
+section{
+
+    padding: 0;
+    margin: 0;
+    /* border: solid 3px;
+    border-color: navy; */
+    margin-top: 13px;
+    justify-content: space-around;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    bottom: 215px;
+    background-color: ivory;
+
+}
+
+.a{
+
+    overflow:hidden;
+    border: solid 2px;
+    border-radius: 100%;
+
+}
+
+.b{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+
+
+footer{
+
+    /* border: solid 3px;
+    border-color: royalblue; */
+    padding: 0;
+    margin: 0;
+    margin-top: 13px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: ivory;
+
+}
+
+footer div{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
