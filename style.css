@@ -210,7 +210,7 @@ body {
     width: 180px;
     position: fixed;
     left: -155px;
-    transition: left .5s;
+    transition: left .2s;
 
 }
 
