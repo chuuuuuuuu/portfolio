@@ -4,73 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
-    <link rel="stylesheet" href="login.css">
-    <script src="jquery-3.3.1.min.js"></script>
+    <title>Love Chuu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <section class="login-from">
+    <header>
 
-        <h1>로그인</h1>
+        <h2>김지우 사랑해</h2>
 
-        <form action="login.html" method="GET">
+    </header>
+    <div class="left-side-bar">
+        <div class="status">
 
-            <div class="int-area">
-
-                <input type="text" name="id" id="id" autocomplete="off" required>
-                <label for="id">USER NAME</label>
-
-            </div>
-
-            <div class="int-area">
-
-                <input type="password" name="pw" id="pw" autocomplete="off" required>
-                <label for="pw">PASSWORD</label>
+            <span>:arrow_forward:</span>
+            <span>▼</span>
 
             </div>
+            <ul>
 
-            <div class="btn-area">
 
-                <button type="submit" id="btn">LOGIN</button>
+                <li>
 
-            </div>
+                    <a href="#">김지우</a>
 
-        </form>
+                    <ul>
+
+                        <li><a href="#">사</a></li>
+                        <li><a href="#">랑</a></li>
+                        <li><a href="#">합</a></li>
+                        <li><a href="#">니</a></li>
+                        <li><a href="#">다</a></li>
+
+                    </ul>
+
+                </li>
+
+        </div>
+
+
+
+
+    <section>
+
+
+        <div class="a">
+            <a href="https://www.youtube.com/channel/UChK2DhvPSG3sY0jIYYngVBA" target="_blank"><img src="adfskghadfsgkhj.jpg" alt="김영중" class="b"></a> 
+        </div>
+
+        <div class="a">
+            <a href="https://namu.wiki/w/%EC%B8%84(%EC%9D%B4%EB%8B%AC%EC%9D%98%20%EC%86%8C%EB%85%80)" target="_blank"><img src="asdflkjhadsfhjk.jpg" alt="김밥중" class="b"></a>
+        </div>
 
     </section>
 
-    <script>
+    <footer>
 
-        let id = $('#id');
-        let pw = $('#pw');
-        let btn = $('#btn');
+        <div>
 
-        $(btn).on('click', function(){
+            <p>츄 사랑해</p>
 
-            if($(id).val() == ""){
-
-                $(id).next('label').addClass('warning');
-                setTimeout(function(){
-
-                    $('label').removeClass('warning');
-
-                },1500);
-
-            }else if($(pw).val() == ""){
-
-                $(pw).next('label').addClass('warning');
-                setTimeout(function(){
-
-                    $('label').removeClass('warning');
-
-                },1500);
-
-            }
-
-        });
-
-    </script>
-
-</body>
-</html>
+        </div>
