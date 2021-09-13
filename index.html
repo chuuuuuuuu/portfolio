@@ -1,67 +1,76 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Chuu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>로그인</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
     
-    <header>
+    <section class="login-from">
 
-        <h2>김지우 사랑해</h2>
+        <h1>로그인</h1>
 
-    </header>
-    <div class="left-side-bar">
-        <div class="status">
+        <form action="index.html" method="POST">
 
-            <span>▶</span>
-            <span>▼</span>
+            <div class="int-area">
+
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">USER NAME</label>
 
             </div>
-            <ul>
 
+            <div class="int-area">
 
-                <li>
-    
-                    <a href="#">김지우</a>
-    
-                    <ul>
-    
-                        <li><a href="#">사</a></li>
-                        <li><a href="#">랑</a></li>
-                        <li><a href="#">합</a></li>
-                        <li><a href="#">니</a></li>
-                        <li><a href="#">다</a></li>
-    
-                    </ul>
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <label for="pw">PASSWORD</label>
 
-                </li>
-                
-        </div>
+            </div>
 
+            <div class="btn-area">
 
-    
+                <button type="submit" id="btn">LOGIN</button>
 
-    <section>
+            </div>
 
-        
-        <div class="a">
-            <a href="https://www.youtube.com/channel/UChK2DhvPSG3sY0jIYYngVBA" target="_blank"><img src="adfskghadfsgkhj.jpg" alt="김영중" class="b"></a> 
-        </div>
-
-        <div class="a">
-            <a href="https://namu.wiki/w/%EC%B8%84(%EC%9D%B4%EB%8B%AC%EC%9D%98%20%EC%86%8C%EB%85%80)" target="_blank"><img src="asdflkjhadsfhjk.jpg" alt="김밥중" class="b"></a>
-        </div>
+        </form>
 
     </section>
 
-    <footer>
+    <script>
 
-        <div>
+        let id = $('#id');
+        let pw = $('#pw');
+        let btn = $('#btn');
 
-            <p>츄 사랑해</p>
+        $(btn).on('click', function(){
 
-        </div>
+            if($(id).val() == ""){  
+
+                $(id).next('label').addClass('warning');
+                setTimeout(function(){
+
+                    $('label').removeClass('warning');
+
+                },1500);
+
+            }else if($(pw).val() == ""){
+
+                $(pw).next('label').addClass('warning');                
+                setTimeout(function(){
+
+                    $('label').removeClass('warning');
+
+                },1500);
+
+            }
+            
+        });
+
+    </script>
+
+</body>
+</html>
