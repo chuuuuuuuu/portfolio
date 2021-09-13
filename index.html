@@ -9,7 +9,7 @@
     <script src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    
+
     <section class="login-from">
 
         <h1>로그인</h1>
@@ -48,7 +48,7 @@
 
         $(btn).on('click', function(){
 
-            if($(id).val() == ""){  
+            if($(id).val() == ""){
 
                 $(id).next('label').addClass('warning');
                 setTimeout(function(){
@@ -59,7 +59,7 @@
 
             }else if($(pw).val() == ""){
 
-                $(pw).next('label').addClass('warning');                
+                $(pw).next('label').addClass('warning');
                 setTimeout(function(){
 
                     $('label').removeClass('warning');
@@ -67,7 +67,7 @@
                 },1500);
 
             }
-            
+
         });
 
     </script>
