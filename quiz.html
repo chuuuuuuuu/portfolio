@@ -138,10 +138,15 @@
 
                 quizDiv.innerHTML = txt;
 
-                if (per < 60) {
+                if (per < 20) {
 
                     txt += '<h2>분발하세요 ㅡㅡ</h2>';
                     quizDiv.innerHTML = txt;
+
+                } else if (per == 40) {
+
+                    txt += '<h2>많이 아쉽네요 ㅡㅡ</h2>';
+                    quizDiv.innerHTML = txt;               
 
                 } else if (per >= 60 && per < 80) {
 
