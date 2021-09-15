@@ -313,7 +313,7 @@ table{
 
     border-collapse: collapse;
     left: 100px;
-    width: 300px;
+    width: 400px;
 
 }
 
@@ -333,10 +333,13 @@ section2 {
     display: flex;
     position: absolute;
     width: 100%;
-    height: 600px;
-    bottom: 370px;
+    height: 500px;
+    bottom: 375px;
 
 }
 
+div a {
+    color:	#4169E1;
+}
 
 
