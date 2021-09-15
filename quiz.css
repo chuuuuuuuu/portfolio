@@ -1,4 +1,14 @@
+body {
 
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('12345.jpg');
+    background-size: cover;
+
+}
  
 .grid {
 
