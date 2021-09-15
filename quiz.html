@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>츄 퀴즈!</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+    <div class="grid">
+
+        <h1>퀴즈</h1>
+
+        <div id="quiz">
+
+           <p id="question"></p>
+     
+           <div class="buttons">
+
+              <button class="btn"></button>
+              <button class="btn"></button>
+              <button class="btn"></button>
+              <button class="btn"></button>
+
+           </div>
+     
+           <footer>
+
+              <p id="progress">진행 정보</p>
+
+           </footer>
+
+        </div>
+
+    </div>
+
+        <script>
+
+            function Question(text, choice, answer) {
+
+                this.text = text;
+                this.choice = choice; 
+                this.answer = answer; 
+
+            }
+
+            function Quiz(questions) {
+
+                this.score = 0; 
+                this.questions = questions;
+                this.questionIndex = 0;
+
+            }
+
+            Quiz.prototype.correctAnswer = function(answer) {
+
+                return answer == this.questions[this.questionIndex].answer;
+
+            }
+
+            var questions = [
+
+                new Question('김태연은', ['잘생김', '게이', '천재', '점심을 안 거름'], '게이'),
+                new Question('성현추?', ['성현추', '성현비추', '성현추추푸드패스티벌', '방구'], '성현추'),
+                new Question('1 + 1 =?', ['2', '3', '창문', 'cex'], 'cex'),
+                new Question('1972 * 6974', ['김영중', '이정훈', '박찬솔', '박태민'], '김영중')
+                
+            ];
+
+            var quiz = new Quiz(questions);
+
+            function updateQuiz() {
+
+                var question = document.getElementById('question');
+                var idx = quiz.questionIndex + 1;
+                var choice = document.querySelectorAll('.btn');
+                question.innerHTML = '문제' + idx + ') ' + quiz.questions[quiz.questionIndex].text;
+
+                for (var i = 0; i < 4; i++) {
+
+                    choice[i].innerHTML = quiz.questions[quiz.questionIndex].choice[i];
+
+                }
+
+                progress();
+            }
+
+            function progress() {   
+
+                var progress = document.getElementById('progress');
+                progress.innerHTML = '문제 ' + (quiz.questionIndex + 1) + '/ ' + quiz.questions.length;
+
+            }
+
+            var btn = document.querySelectorAll('.btn');
+
+            function checkAnswer(i) {
+
+                btn[i].addEventListener('click', function() {
+
+                    var answer = btn[i].innerText;
+
+                    if (quiz.correctAnswer(answer)) {
+
+                        alert('정답입니다!');
+                        quiz.score++;
+
+                    } else {
+
+                        alert('틀렸습니다!');
+
+                    }
+
+                    if (quiz.questionIndex < quiz.questions.length - 1) {
+
+                        quiz.questionIndex++;
+                        updateQuiz();
+
+                    } else {
+
+                        result();
+
+                    }
+
+                });
+
+            }
+
+            function result() {
+
+                var quizDiv = document.getElementById('quiz');
+                var per = parseInt((quiz.score * 100) / quiz.questions.length);
+                var txt = '<h1>결과</h1>' + '<h2 id="score">당신의 점수: ' + quiz.score + '/' + quiz.questions.length + '<br><br>' + per + '점' + '</h2>';
+
+                quizDiv.innerHTML = txt;
+
+                if (per < 60) {
+
+                    txt += '<h2>당신은 김영중</h2>';
+                    quizDiv.innerHTML = txt;
+
+                } else if (per >= 60 && per < 80) {
+
+                    txt += '<h2>나쁘지 않군</h2>'
+                    quizDiv.innerHTML = txt;
+
+                } else if (per >= 80) {
+
+                    txt += '<h2>존나못하네</h2>'
+                    quizDiv.innerHTML = txt;
+
+                }
+
+            }
+
+            for (var i = 0; i < btn.length; i++) {
+
+                checkAnswer(i);
+
+            }
+
+            updateQuiz();
+
+    </script>
+
+</body>
+</html>
