@@ -39,6 +39,7 @@ body::before {
 
 p {
     font-family: "h";
+    text-align: center;
 }
 
 header{
