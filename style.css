@@ -27,6 +27,14 @@ body{
 
 }
 
+p2{
+
+    position: absolute;
+    font-size: 20px;
+    bottom: 50px;
+    left: 55px;
+}
+
 body::before {
     height:100%;
     max-width: 1900px;
