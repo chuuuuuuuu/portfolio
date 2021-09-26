@@ -24,7 +24,7 @@ body::before {
 	bottom: 0;
     background-image: url('1234.jpg');
     background-repeat: no-repeat;
-    background-size:1700px;
+    background-size:contain;
 	z-index: -1;
 	content: "";
 }
