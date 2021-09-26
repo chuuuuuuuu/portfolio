@@ -3,7 +3,9 @@
     font-family: "jua";
     src: url("BMJUA_ttf.ttf");
     font-family: "h";
-    src: url("Amarillo.ttf")
+    src: url("Amarillo.ttf");
+    font-family: "chuu";
+    src: url("Caramel-Regular.ttf");
 
 }
 
@@ -42,6 +44,13 @@ p {
     text-align: center;
     font-size: 150px;
 }
+
+p1 {
+    font-family: "chuu";
+    text-align: center;
+    font-size: 125px;
+}
+
 
 header{
 
