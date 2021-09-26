@@ -2,6 +2,8 @@
 
     font-family: "jua";
     src: url("BMJUA_ttf.ttf");
+    font-family: "h";
+    src: url("Caramel-Regular.ttf")
 
 }
 
@@ -36,7 +38,7 @@ body::before {
 }
 
 p {
-    
+    font-family: "h";
 }
 
 header{
