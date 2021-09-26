@@ -22,9 +22,9 @@ body::before {
 	left: 0;
 	right: 0;
 	bottom: 0;
-    background-image: url('1234.jpg');
+    background-image: url('adfklhjafdshjk.jpg');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
 	z-index: -1;
 	content: "";
 }
