@@ -89,6 +89,11 @@ nav{
     
 }
 
+span img {
+    width: 7px;
+    height: 7px;
+}
+
 nav div{
 
     font-size: 20px;
