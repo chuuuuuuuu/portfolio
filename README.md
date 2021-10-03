@@ -5,6 +5,7 @@ USER NAME, PASSWORD를 아무렇게 입력하고 LOGIN 버튼을 누르면 로�
 ## login error
 ![image](https://user-images.githubusercontent.com/90454869/135755198-cbf88604-a49f-4602-8bd6-ff22e4a1dcc4.png)
 ![image](https://user-images.githubusercontent.com/90454869/135755346-14e43ed7-2a7a-4351-9cd0-d22ba39d1ef2.png)
+USER NAME, PASSWORD를 입력하지 않고 LOGIN 버튼을 누를 시 
 ## main
 ![image](https://user-images.githubusercontent.com/90454869/135756251-c4980a17-84b8-4ea7-b556-b9ff9261fe46.png)
 ## menu
