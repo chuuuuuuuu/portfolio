@@ -8,7 +8,9 @@
 ![image](https://user-images.githubusercontent.com/90454869/135756251-c4980a17-84b8-4ea7-b556-b9ff9261fe46.png)
 ## menu
 ![image](https://user-images.githubusercontent.com/90454869/135756396-e7ee1890-f31b-4025-8111-2d5b207af04e.png)
-![image](https://user-images.githubusercontent.com/90454869/135756539-d366857d-81d0-4aed-9f2c-90ea87857368.png)
+![image](https://user-images.githubusercontent.com/90454869/135756647-21e5afeb-b875-4169-a203-38793159ecc2.png)
+![image](https://user-images.githubusercontent.com/90454869/135756624-ea577ecf-ccdc-4971-8b51-6d88757262cc.png)
+
 
 
 
