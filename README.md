@@ -14,7 +14,7 @@ USER NAME, PASSWORD를 모두 다 입력하지 않고 LOGIN 버튼을 누를 시
 
 ![image](https://user-images.githubusercontent.com/90454869/135756647-21e5afeb-b875-4169-a203-38793159ecc2.png)
 
-메뉴중 츄에 마우스를 갖다 대면 부항목들이 나옵니다.
+메뉴 중 츄에 마우스를 갖다 대면 부항목들이 나옵니다.
 ## Quiz
 ![image](https://user-images.githubusercontent.com/90454869/135756736-baad9c19-a25c-4913-a766-7532fabd235d.png)
 
